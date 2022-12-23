@@ -1,0 +1,141 @@
+@import url(https://fonts.google.com/specimen/Outfit);
+*{
+    padding: 0;
+    /* margin: 0; */
+}
+body{
+    background-color: hsl(217, 54%, 11%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: hsl(0, 0%, 100%);
+    min-height: 100vh;
+    font-size: 18px;
+    font-family: "Outfit", sans-serif;
+}
+main{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.outer{
+    width: 300px;
+    height: 32rem;
+    background-color: hsla(216, 51%, 16%, 0.13);
+    padding: 15px;
+    border-radius: 1.0rem;
+}
+.inner{
+    width: 270px;
+    height: 30rem;
+    background-color: hsl(216, 50%, 16%);
+    padding: 15px;
+    border-radius: 1.0rem;
+}
+.inner img{
+    border-radius: 0.7rem;
+    width: 270px;
+}
+.desc{
+    padding: 0 7px 0 7px;
+    margin-top: -7px;
+}
+h4{
+    font-weight: 600;
+    /* color: hsl(178, 100%, 50%) */
+}
+h4:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+    
+}
+p{
+    color: hsl(215, 51%, 70%);
+    font-weight: 400;
+    font-size: 14px;
+}
+.first-para{
+    margin-bottom: 20px;
+}
+.prices{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+.prc{
+    color: hsl(178, 100%, 50%);
+    font-size: 15px;
+    font-weight: 600;
+}
+.prc img{
+    width: 7px;
+}
+.time{
+    color: hsl(215, 51%, 70%);;
+    font-size: 15px;
+    font-weight: 600;
+    /* display: flex;
+    align-items: flex-end; */
+    margin-left: 80px;
+}
+.time img{
+    width: 12px;
+}
+hr{
+    /* border: 1px solid hsl(215, 51%, 70%); */
+    border: none;
+    height: 1px;
+    /* Set the hr color */
+    color: #333; /* old IE */
+    background-color:  hsl(215, 51%, 70%); /* Modern Browsers */
+}
+.avatar{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+.avatar img{
+    width: 35px;
+    height: 35px;
+    border: 1px solid white;
+    border-radius: 20px;
+}
+.avatar p{   
+    margin-left: 15px;
+    font-size: 13px;
+}
+.name{
+    color:white;
+}
+.name:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+.eye:hover{
+    cursor: pointer;
+    opacity: 1;
+}
+.eye{
+    position: absolute;
+    /* top: 0; */
+    bottom: 45%;
+    /* background-color: hsl(178, 100%, 50%, 50%); */
+    width: 270px;
+    height: 37%;
+    z-index: 999;
+    border-radius: 0.7rem;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+.eye img{
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    width: 27px;
+    transform: translate(-50%, -50%);
+}
+.eye:hover{
+    opacity: 1;
+}
